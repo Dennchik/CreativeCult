@@ -45,7 +45,7 @@
 }
 
 .card-item {
-	max-width: 385px;
+	max-width: 285px;
 	flex: 0 0 33.333%;
 	height: auto;
 	display: flex;
@@ -53,6 +53,8 @@
 	border-radius: 0px 0px 32px 32px;
 	background: rgb(252, 252, 252);
 	border-radius: 32px;
+	@include _490 {
+	}
 
 	// .card-item__image
 	&__image {

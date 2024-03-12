@@ -13,6 +13,7 @@ export default function holdingSlide(
 			spaceBetween: 8,
 			grabCursor: true,
 			speed: 500,
+			loop: true,
 			freeMode: true,
 			navigation: {
 				nextEl: '.holding-btn-next',

@@ -3,7 +3,7 @@
 	grid-template-columns: 1fr auto auto;
 	margin-bottom: 8px;
 	@include _690 {
-		margin-bottom: 40px;
+		margin: 0 16px 40px;
 	}
 
 	// .menu-top__left

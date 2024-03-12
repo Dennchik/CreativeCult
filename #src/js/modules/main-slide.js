@@ -13,7 +13,7 @@ export default function directSlide(
 			spaceBetween: 8,
 			grabCursor: true,
 			speed: 500,
-			// loop: true,
+			loop: true,
 			freeMode: true,
 			navigation: {
 				nextEl: '.direction-btn-next',
@@ -23,7 +23,7 @@ export default function directSlide(
 				320: {
 					slidesPerView: 1,
 				},
-				480: {
+				490: {
 					slidesPerView: 2,
 				},
 				860: {

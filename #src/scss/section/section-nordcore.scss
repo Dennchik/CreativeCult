@@ -54,7 +54,8 @@
 		gap: 8px;
 		@include _690 {
 			overflow-x: auto;
-			scrollbar-width: none;
+			-webkit-overflow-scrolling: touch;
+			scrollbar-width: thin;
 			&::-webkit-scrollbar {
 				height: 0;
 			}

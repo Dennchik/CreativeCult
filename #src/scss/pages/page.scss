@@ -14,10 +14,10 @@
 		position: relative;
 		z-index: 9;
 		background: linear-gradient(135deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
-		padding: 376px 16px 0;
+		padding: 380px 16px 0;
 		border-radius: 0px 0px 64px 64px;
 		@include _690 {
-			padding: 256px 16px 0;
+			padding: 256px 0 0 16px;
 			border-radius: 0px 0px 40px 40px;
 		}
 	}

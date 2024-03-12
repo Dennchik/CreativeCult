@@ -1,8 +1,8 @@
 .info-page {
+	overflow: visible;
 	&__header-menu {
 		position: relative;
 		z-index: 9;
-		// top: 16px;
 	}
 
 	&__vector1 {
@@ -26,16 +26,18 @@
 	&__image {
 		pointer-events: none;
 		position: relative;
-		top: 0;
+		top: 260px;
 		right: 0;
 		width: 100%;
 		height: 100%;
+		@include _690 {
+			top: -10px;
+		}
 		@include _min-690 {
 			position: absolute;
 		}
 		img {
 			@include _min-690 {
-				top: 104px;
 				width: 1135px;
 				height: 727px;
 				right: -235px;
@@ -51,34 +53,47 @@
 	}
 
 	// .info-page__vector
-	&__vector2 {
+	&__vector-8 {
 		pointer-events: none;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		right: 0;
-
-		@include _min-690 {
-			position: absolute;
-		}
+		width: 496.1px;
+		height: 451.98px;
+		position: absolute;
+		top: 340px;
+		right: -100px;
+		filter: blur(25px);
+		max-width: 100%;
+		background: url('../img/bg-image/vector-8.png') center / contain no-repeat;
 		@include _690 {
-			position: absolute;
+			// top: -150px;
+			top: calc(-150px + (-100 - (-150)) * ((100vw - 320px) / (690 - 320)));
+			right: calc(-150px + (-100 - (-150)) * ((100vw - 320px) / (690 - 320)));
 		}
-		filter: blur(30px);
-		img {
-			position: absolute;
-			max-width: 100%;
-			@include _min-690 {
-				width: 761.1px;
-				height: 451.98px;
-				top: 460px;
-				right: -270px;
-			}
-			@include _690 {
-				right: -140px;
-				top: -20px;
-			}
-		}
+		// width: 100%;
+		// height: 100%;
+		// top: 0;
+		// right: 0;
+
+		// @include _min-690 {
+		// 	position: absolute;
+		// }
+		// @include _690 {
+		// 	position: absolute;
+		// }
+		// filter: blur(30px);
+		// img {
+		// 	position: absolute;
+		// 	max-width: 100%;
+		// 	@include _min-690 {
+		// 		width: 761.1px;
+		// 		height: 451.98px;
+		// 		top: 460px;
+		// 		right: -270px;
+		// 	}
+		// 	@include _690 {
+		// 		right: -140px;
+		// 		top: -20px;
+		// 	}
+		// }
 	}
 
 	&__ellipse9 {
@@ -106,18 +121,18 @@
 	&__menu {
 		position: relative;
 		z-index: 9;
-		max-width: 120rem;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 
 	// .info-page__content
 	&__content {
 		position: relative;
-		max-width: 120rem;
-		margin: 0 auto 12rem;
+		max-width: 1200px;
+		margin: 0 auto 120px;
 		z-index: 9;
 		@include _1140 {
-			margin-bottom: 5rem;
+			margin-bottom: 50px;
 		}
 	}
 
@@ -159,7 +174,6 @@
 				}
 
 				white-space: nowrap;
-				margin: 10px 0px;
 			}
 
 			&:nth-child(2) {
@@ -167,7 +181,7 @@
 				border-radius: 10rem;
 				background: #4ad6ff;
 				@include _min-690 {
-					margin-bottom: 3.2rem;
+					margin-bottom: 32px;
 					padding: 1rem 3.2rem 2rem;
 				}
 
@@ -229,6 +243,11 @@
 	// .content-infopage__footer
 	&__footer {
 		display: flex;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		&::-webkit-scrollbar {
+			height: 0;
+		}
 	}
 }
 
@@ -287,6 +306,9 @@
 .card-company {
 	display: flex;
 	gap: 0.8rem;
+	@include _690 {
+		margin-right: 16px;
+	}
 	@include _768 {
 		flex-direction: column;
 		justify-content: center;
@@ -517,7 +539,7 @@
 		width: 625px;
 		height: 570px;
 		transform: rotate(-119.81deg);
-		background: url('../img/vector_11.png') top / cover;
+		background: url('../img/bg-image/vector-11.png') top / cover;
 		overflow: visible;
 		@include _min-1440 {
 			bottom: -25px;
@@ -549,7 +571,7 @@
 				rgba(11, 16, 36, 0.18) 69.564%,
 				rgb(6, 8, 12) 93.493%
 			),
-			url('../img/image_6.png');
+			url('../img/bg-image/image-6.png');
 		@include _min-1140 {
 			left: 445px;
 			bottom: -210px;
@@ -641,6 +663,9 @@
 		@include _960 {
 			width: 100%;
 		}
+		@include _690 {
+			margin-right: 16px;
+		}
 	}
 
 	// .footer-content__adaptive
@@ -683,10 +708,18 @@
 		margin-bottom: 120px;
 		@include flex-justify-space-between;
 		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: thin;
+		&::-webkit-scrollbar {
+			height: 0;
+		}
 	}
 }
 
 .footer-info {
+	&__wrapper {
+		display: flex;
+	}
 	// .footer-info__column
 	&__column {
 		position: relative;
