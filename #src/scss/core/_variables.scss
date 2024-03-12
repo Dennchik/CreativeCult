@@ -1,0 +1,57 @@
+//* ------------------------------- [Variables] --------------------------------
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1440px;
+// $min-height: calc(100% - ($headerHeight + $footerHeight));
+//* ---------------------------- [Font Variables] ------------------------------
+$font-path: '../fonts';
+$font-defoult: 'Nunito Sans', sans-serif;
+$font-family-secondary: 'Manrope', sans-serif;
+$font-weight-defoult: 400;
+$font-size-defoult: 1.8rem;
+$font-color-defoult: rgb(16, 16, 16);
+//* ----------------------------------------------------------------------------
+$background-color: rgb(245, 245, 245);
+//* -------------------------------- [Color] -----------------------------------
+$gray: #999999;
+$yellow: #ecc673ee;
+$orange: #f67438;
+$second-color: #002f5a;
+$darkcyan: darkcyan;
+$color: #058daf;
+$text-color: #000000;
+//* ---------------------------- [Other colors] --------------------------------
+$text-title: #8ff2ff;
+$text-selection: #0054633f;
+$text-color-selection: #9b9999;
+// -----------------------------------------------------------------------------
+:root {
+	//* ---------------------------- [Background] --------------------------------
+	--background-color: #191b27;
+	--background-transparent: #0e0e13da;
+	//* ---------------------------- [Scrollbar] ---------------------------------
+	--selected-color: #71cbff;
+	--themes-color: #0b486b;
+	--background-thumb: #16161e;
+	--scrollbar-thumb-bgcolor: #07325a8a;
+	--border-color: #3c548d49;
+	//* -------------------------- [Other colors] --------------------------------
+	--pos: left center;
+	--size: 0;
+	--inset-top: 0;
+	--inset-right: 100%;
+	--inset-bottom: 100%;
+	--inset-left: 0;
+	// ---------------------------------------------------------------------------
+	--stripe-width: 10px;
+	--nav-marker-border: #3b8686;
+	--sidebar-width: 28.5rem;
+	--duration: 0.3s;
+
+	--button-size: 4rem;
+	--mob-expanded-width: 320px;
+	--mob-collapsed-width: 4rem;
+}
+
+$snap: cubic-bezier(1, 0.005, 0.24, 1);
+$bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);

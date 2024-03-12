@@ -1,0 +1,17 @@
+.grad_underline {
+	background: linear-gradient(to left, transparent, transparent),
+		linear-gradient(to left, #2b2d4156, #fff);
+	background-size:
+		100% 1px,
+		0 1px;
+	background-position:
+		100% 100%,
+		0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+	&:hover {
+		background-size:
+			0 1px,
+			calc(100% - 0px) 1px;
+	}
+}

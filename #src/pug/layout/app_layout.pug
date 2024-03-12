@@ -1,0 +1,50 @@
+include ../includes/mixins
+include ../includes/variables.pug
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(name="description" content="Краткое описание документа")
+		meta(name="keywords" content="keywords-ключевые слова для поиска")
+		block link
+			link(rel="icon" type="image/icon" href="@@webRoot/img/header/logo.png")
+			link(rel="stylesheet" type="text/css" href="@@webRoot/css/style.min.css" ) 
+		block script
+			script(defer="defer" type="text/javascript" src="@@webRoot/js/main.min.js")
+		block title
+		- var text
+			title #{text}
+
+	body   
+		div(class="wrapper")
+			block page 
+				block header
+				main.page._container 
+					._item
+						section._info 
+							block info-block
+						section._services-nordcore
+							block section-service-nordcore
+						section._services-swift 
+							block section-service-swift 
+						section._cases
+							block section-cases
+						section._media
+							block section-media 
+						section._review
+							block siction-review
+						section._clients
+							block section-clients 
+						section._direction
+							block section-direction
+						section._contact
+							block section-contact
+						section._footer
+							block section-footer
+
+
+
+
+
+

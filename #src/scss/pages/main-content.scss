@@ -1,0 +1,51 @@
+.main-content {
+	flex: 0 1 100%;
+
+	// .main-content__body
+	&__body {
+		position: relative;
+		z-index: 7;
+		min-height: 100%;
+		display: flex;
+		opacity: 0;
+		background-color: var(--background-editor);
+	}
+
+	// .main-content__main-side
+	&__side-bar {
+		min-height: 100%;
+	}
+
+	// .main-content__editor
+	&__editor {
+		position: relative;
+		width: 100%;
+		z-index: 2;
+		overflow: hidden;
+		max-height: calc(100vh - 12.6rem);
+		@include _min-690 {
+			max-height: calc(100vh - 10.6rem);
+		}
+	}
+}
+// -----------------------------------------------------------------------------
+.move-content {
+	padding: 1rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateX(-100%);
+	transition:
+		transform 0.5s ease 0s,
+		opacity 0.8s ease 0s;
+	background: var(--background-transparent);
+	opacity: 0;
+	z-index: 9;
+
+	&.opened-menu {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}

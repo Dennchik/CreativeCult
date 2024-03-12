@@ -1,0 +1,15 @@
+//* ------------------------- [Class _ibg] -------------------------------------
+._ibg {
+	position: relative;
+	img {
+		position: absolute;
+		// width: 100%;
+		// height: 100%;
+		object-fit: cover;
+	}
+	svg {
+		top: 0;
+		right: 0;
+		position: absolute;
+	}
+}

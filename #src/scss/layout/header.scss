@@ -1,0 +1,13 @@
+.info-page__box {
+	font-size: 20px;
+}
+.header {
+	max-width: 1200px;
+	position: sticky;
+	z-index: 10;
+	top: 16px;
+	margin: 0 auto;
+	&__body {
+		padding: 0 16px;
+	}
+}

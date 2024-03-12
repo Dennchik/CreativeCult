@@ -1,0 +1,71 @@
+// todo -------------------------- Variables -----------------------------------
+@import 'core/variables';
+@import 'core/variables-icon';
+//todo ---------------------------- Core ---------------------------------------
+@import 'core/mixins';
+@import 'core/reset';
+//todo ------------------------- Default fonts ---------------------------------
+// &display=swap&subset=cyrillic-ext
+@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,500,600,700,800&display=swap&subset=cyrillic-ext);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext);
+// todo --------------------------- Fonts --------------------------------------
+@import 'core/fonts';
+//todo  ------------------------ Icon Fonts ------------------------------------
+@import 'core/iconfonts';
+// todo -------------------------- Plugins -------------------------------------
+@import 'assets/swiper-bundle';
+// @import 'assets/swiper.scss';
+// todo -------------------------- Classes -------------------------------------
+// #region
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+[class*='_container'] {
+	max-width: $maxWidthContainer;
+	box-sizing: content-box;
+	margin: 0 auto;
+
+	@include _min-490 {
+		padding: 0 15px;
+	}
+}
+
+[class*='grid-'] {
+	display: grid;
+}
+
+[class*='icon-'] {
+	cursor: pointer;
+	height: 100%;
+	@include flex-align-center-justify-center;
+}
+
+[class*='_stretch'] {
+	position: relative;
+	z-index: 0;
+}
+// todo --------------------------- Assets -------------------------------------
+@import 'assets/burger-bottom';
+// todo --------------------------- layout -------------------------------------
+@import 'layout/bem-block';
+@import 'layout/header';
+@import 'layout/footer';
+// todo -------------------------- Modules -------------------------------------
+@import 'modules/burger-menu';
+// todo --------------------------- Pages --------------------------------------
+@import 'pages/page';
+// todo -------------------------- Sections ------------------------------------
+@import 'section/section-info.scss';
+@import 'section/section-menu';
+@import 'section/section-nordcore';
+@import 'section/section-swift';
+@import 'section/section-cases';
+@import 'section/section-media';
+@import 'section/section-review';
+@import 'section/section-clients';
+@import 'section/section-direct';
+@import 'section/section-holding-team';
+@import 'section/section-contact';
+@import 'section/section-footer';
