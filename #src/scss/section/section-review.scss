@@ -132,7 +132,7 @@
 		left: -100px;
 		z-index: 1;
 		filter: blur(16px);
-		background: url('../img/vector_7.png') center / cover no-repeat;
+		background: url('../img/bg-image/vector-7.png') center / cover no-repeat;
 	}
 
 	// .review__vector-8
@@ -145,7 +145,7 @@
 		opacity: 0.8;
 		filter: blur(25px);
 		z-index: 9;
-		background: url('../img/vector_8.png') center / contain no-repeat;
+		background: url('../img/bg-image/vector-8.png') center / contain no-repeat;
 		@include _960 {
 			bottom: -30px;
 			left: 130px;
