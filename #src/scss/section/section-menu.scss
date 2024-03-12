@@ -1,4 +1,6 @@
 .menu-top {
+	box-shadow: 1px 1px 7px #000;
+	border-radius: 32px;
 	display: grid;
 	grid-template-columns: 1fr auto auto;
 	margin-bottom: 8px;
@@ -178,6 +180,8 @@
 }
 
 .menu-doun {
+	box-shadow: 1px 1px 7px #000;
+	border-radius: 32px;
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr auto;

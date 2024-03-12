@@ -8,6 +8,10 @@
 	top: 16px;
 	margin: 0 auto;
 	&__body {
-		padding: 0 16px;
+		border-radius: 32px;
+		// background: rgba(252, 252, 252, 0.151);
+		margin: 0 16px;
+		// padding: 16px 0;
+		// box-shadow: 1px 1px 5px #000;
 	}
 }

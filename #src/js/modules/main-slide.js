@@ -13,8 +13,6 @@ export default function directSlide(
 			spaceBetween: 8,
 			grabCursor: true,
 			speed: 500,
-			loop: true,
-			freeMode: true,
 			navigation: {
 				nextEl: '.direction-btn-next',
 				prevEl: '.direction-btn-prew',
