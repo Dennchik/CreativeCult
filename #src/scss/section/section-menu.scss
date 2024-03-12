@@ -28,7 +28,7 @@
 	&__logo {
 		width: 40.47px;
 		height: 44px;
-		background: url('../img/logo_header.svg') center no-repeat;
+		background: url('../img//icon/logo_header.svg') center no-repeat;
 		margin: 7px 0;
 
 		@include _690 {
@@ -170,7 +170,8 @@
 				content: '';
 				width: 20px;
 				height: 20px;
-				background: url('../img/icon_lang_ru.svg') center / contain no-repeat;
+				background: url('../img/icon/icon_lang_ru.svg') center / contain
+					no-repeat;
 			}
 		}
 	}
