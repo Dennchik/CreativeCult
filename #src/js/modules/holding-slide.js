@@ -9,7 +9,7 @@ export default function holdingSlide(
 ) {
 	if (mainslide) {
 		new Swiper(mainslide, {
-			slidesPerView: 4,
+			slidesPerView: 1,
 			spaceBetween: 8,
 			grabCursor: true,
 			speed: 500,
@@ -21,10 +21,13 @@ export default function holdingSlide(
 				320: {
 					slidesPerView: 1,
 				},
-				480: {
+				490: {
 					slidesPerView: 2,
 				},
 				860: {
+					slidesPerView: 3,
+				},
+				1140: {
 					slidesPerView: 4,
 				}
 			}

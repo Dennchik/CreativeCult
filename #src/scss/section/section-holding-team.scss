@@ -13,8 +13,8 @@
 			margin-bottom: 20px;
 		}
 	}
-	// .holding-slide__body
 
+	// .holding-slide__body
 	&__body {
 		position: relative;
 	}
@@ -24,13 +24,13 @@
 		display: flex;
 		gap: 8px;
 		overflow: hidden;
-	}
-
-	.card-item {
-		max-width: 285px;
-		width: 285px;
-	}
-	.card-item__image {
-		width: 285px;
+		@include _960 {
+			overflow: visible;
+			padding-right: 16px;
+		}
+		@include _320 {
+			max-width: 256px;
+			margin-right: 16px;
+		}
 	}
 }

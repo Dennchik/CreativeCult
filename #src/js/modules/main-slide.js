@@ -9,7 +9,7 @@ export default function directSlide(
 ) {
 	if (mainslide) {
 		new Swiper(mainslide, {
-			slidesPerView: 3,
+			slidesPerView: 1,
 			spaceBetween: 8,
 			grabCursor: true,
 			speed: 500,

@@ -99,16 +99,16 @@ export default {
 		]
 	},
 	imagemin: ([
-		// imagemin.svgo({
-		// 	plugins: [
-		// 		{ optimizationLevel: 5 },
-		// 		{ progessive: true },
-		// 		{ interlaced: true },
-		// 		{ removeViewBox: false },
-		// 		{ removeUselessStrokeAndFill: false },
-		// 		{ cleanupIDs: false }
-		// 	],
-		// }),
+		imagemin.svgo({
+			plugins: [
+				{ optimizationLevel: 5 },
+				{ progessive: true },
+				{ interlaced: true },
+				{ removeViewBox: false },
+				{ removeUselessStrokeAndFill: false },
+				{ cleanupIDs: false }
+			],
+		}),
 		imagemin.gifsicle(
 			{ interlaced: true }
 		),

@@ -41,26 +41,34 @@
 		display: flex;
 		gap: 8px;
 		overflow: hidden;
+		@include _960 {
+			overflow: visible;
+			padding-right: 16px;
+		}
+		@include _320 {
+			max-width: 256px;
+			margin-right: 16px;
+		}
 	}
 }
 
 .card-item {
-	max-width: 380px;
-	flex: 0 0 33.333%;
 	height: auto;
 	display: flex;
 	flex-direction: column;
 	border-radius: 0px 0px 32px 32px;
 	background: rgb(252, 252, 252);
 	border-radius: 32px;
-	@include _490 {
-		max-width: 285px;
-	}
 
 	// .card-item__image
 	&__image {
 		position: relative;
 		max-width: 100%;
+		width: 100%;
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 
 	// .card-item__button
