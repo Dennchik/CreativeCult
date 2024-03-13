@@ -20,27 +20,28 @@ html(lang="ru")
 		div(class="wrapper")
 			block page 
 				block header
+				block burger-menu
 				main.page._container 
 					._item
-						section._info 
+						section._info.show-element
 							block info-block
-						section._services-nordcore
+						section._services-nordcore.show-element.scroll-element
 							block section-service-nordcore
-						section._services-swift 
+						section._services-swift.show-element
 							block section-service-swift 
-						section._cases
+						section._cases.show-element
 							block section-cases
-						section._media
+						section._media.show-element
 							block section-media 
-						section._review
+						section._review.show-element
 							block siction-review
-						section._clients
+						section._clients.show-element
 							block section-clients 
-						section._direction
+						section._direction.show-element
 							block section-direction
-						section._contact
+						section._contact.show-element
 							block section-contact
-						section._footer
+						section._footer.show-element
 							block section-footer
 
 

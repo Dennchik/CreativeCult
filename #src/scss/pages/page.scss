@@ -1,6 +1,5 @@
 .page {
 	overflow: hidden;
-	margin-top: -246px;
 
 	// .page__item
 	&__item {
@@ -10,99 +9,169 @@
 
 	// .page__info
 	&__info {
+		transform: translateY(-300px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		overflow: hidden;
 		position: relative;
 		z-index: 9;
 		background: linear-gradient(135deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
-		padding: 380px 16px 0;
-		border-radius: 0px 0px 64px 64px;
+		padding: 240px 16px 120px;
+		border-radius: 0 0 64px 64px;
 		@include _690 {
-			padding: 256px 0 0 16px;
 			border-radius: 0px 0px 40px 40px;
+			padding: 240px 16px 88px;
 		}
 	}
 
 	// .page__services-nordcore
 	&__services-nordcore {
+		transform: translateY(200px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		position: relative;
 		z-index: 8;
 		border-radius: 0px 0px 64px 64px;
 		background: rgb(220, 221, 224);
-		padding: 184px 16px 120px;
-		margin-top: -120px;
+		margin-top: -64px;
 		@include _690 {
-			padding: 184px 0 120px 16px;
+			border-radius: 0px 0px 40px 40px;
 		}
 	}
 
 	// .page__services-swift
 	&__services-swift {
+		transform: translateY(100px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		position: relative;
 		z-index: 7;
-		border-radius: 0px 0px 64px 64px;
+		border-radius: 64px;
 		background: rgb(237, 237, 237);
-		padding: 184px 16px 120px;
-		margin-top: -120px;
+		margin-top: 0 0 64px -64px;
 		@include _690 {
-			padding: 184px 0 120px 16px;
+			border-radius: 0px 0px 40px 40px;
 		}
 	}
 
 	// .page__cases
 	&__cases {
+		transform: translateY(-200px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		position: relative;
 		z-index: 6;
-		border-radius: 0px 0px 64px 64px;
+		border-radius: 0 0 64px 64px;
 		background: linear-gradient(135deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
-		margin-top: -120px;
+		margin-top: -64px;
+		@include _690 {
+			border-radius: 0px 0px 40px 40px;
+		}
 	}
 
 	// .page__media
 	&__media {
+		transform: translateY(200px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		position: relative;
 		z-index: 5;
 		background: rgb(101, 73, 212);
-		margin-top: -120px;
+		margin-top: -64px;
 	}
 
 	// .page__review
 	&__review {
+		transform: translateY(-200px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		overflow: hidden;
 		position: relative;
 		z-index: 6;
 		border-radius: 64px;
 		background: linear-gradient(135deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
-		margin-top: -120px;
+		margin-top: -64px;
+		@include _690 {
+			border-radius: 40px;
+		}
 	}
 
 	// .page__clients
 	&__clients {
+		transform: translateY(200px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		position: relative;
 		z-index: 5;
-		border-radius: 0px 0px 64px 64px;
+		border-radius: 64px;
 		background: rgb(237, 237, 237);
-		margin-top: -120px;
+		margin-top: -64px;
+		@include _690 {
+			border-radius: 0px 0px 40px 40px;
+		}
 	}
 
 	// .page__direction
 	&__direction {
+		transform: translateY(300px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		position: relative;
 		z-index: 4;
-		margin-top: -120px;
+		margin-top: -64px;
 		background: rgb(220, 221, 224);
 	}
 
 	// .page__contact
 	&__contact {
+		transform: translateY(100px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		position: relative;
 		z-index: 5;
-		margin-top: -120px;
-		border-radius: 64px 64px 0px 0px;
+		margin-top: -64px;
+		border-radius: 64px 64px 0 0;
 		background: rgb(20, 92, 239);
+		@include _690 {
+			border-radius: 40px 40px 0 0;
+		}
 	}
 
 	// .page__footer
 	&__footer {
+		transform: translateY(300px);
+		transition:
+			transform 0.7s,
+			opacity 0.7s;
+		opacity: 0;
+
 		position: relative;
 		z-index: 6;
 		margin-top: -64px;

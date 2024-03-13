@@ -26,11 +26,16 @@
 	&__image {
 		pointer-events: none;
 		position: relative;
-		top: 260px;
+		top: 140px;
 		right: 0;
 		width: 100%;
 		height: 100%;
+		@include _768 {
+			top: 80px;
+			left: 80px;
+		}
 		@include _690 {
+			left: 0;
 			top: -10px;
 		}
 		@include _min-690 {
@@ -47,7 +52,6 @@
 			@include _690 {
 				max-width: 100%;
 				position: relative;
-				// object-fit: contain;
 			}
 		}
 	}
@@ -88,14 +92,6 @@
 		svg {
 			fill: #050b24;
 		}
-	}
-
-	// .info-page__menu
-	&__menu {
-		position: relative;
-		z-index: 9;
-		max-width: 1200px;
-		margin: 0 auto;
 	}
 
 	// .info-page__content
@@ -677,7 +673,6 @@
 
 	// .footer-content__footer
 	&__footer {
-		margin-bottom: 120px;
 		@include flex-justify-space-between;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;

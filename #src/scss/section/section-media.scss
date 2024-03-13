@@ -30,10 +30,11 @@
 	// .media__body
 	&__body {
 		position: relative;
-		@extend .service-nordcore__body;
-		padding: 184px 0 120px 16px;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 184px 16px 216px;
 		@include _690 {
-			padding: 184px 0 88px 16px;
+			padding: 120px 0 184px 16px;
 		}
 	}
 
@@ -197,7 +198,7 @@
 	// .media__button
 	&__button {
 		cursor: pointer;
-		margin: 0 16px 120px 0;
+		margin: 0 16px 0 0;
 		padding: 10px 32px 10px 32px;
 		color: rgb(252, 252, 252);
 		font-family: Manrope;

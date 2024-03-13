@@ -3,9 +3,9 @@
 	&__body {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding: 240px 16px;
+		padding: 184px 16px;
 		@include _960 {
-			padding: 200px 16px;
+			padding: 120px 16px;
 		}
 	}
 }

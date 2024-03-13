@@ -3,10 +3,6 @@
 	&__body {
 		position: relative;
 		@extend .service-nordcore__body;
-		padding: 184px 0 120px 16px;
-		@include _690 {
-			padding: 184px 0 88px 16px;
-		}
 	}
 
 	// .cases__title

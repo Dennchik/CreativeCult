@@ -9,6 +9,81 @@ const $ = {
 	burgerBttns: document.querySelector('.burger-bottom'),
 	burgerMenu: document.querySelector('.burger-menu')
 };
+// -----------------------------(Paralax Element)-------------------------------
+function _paralaxElement() {
+	const scrollElements = document.querySelectorAll('.scroll-element');
+	if (scrollElements.length > 0) {
+		window.addEventListener('scroll', animOnScroll);
+
+		// window.onscroll = function () {
+		function animOnScroll() {
+			for (let i = 0; i < scrollElements.length; i++) {
+				const scrollElement = scrollElements[i];
+				const elementHieght = scrollElement.offsetHeight;
+				console.log(elementHieght);
+				const elementOffset = offset(scrollElement).top;
+				const elementStart = 4;
+
+				// let windowHeight = window.innerHeight;
+				let startElementPoint = window.innerHeight - elementHieght / elementStart;
+				if (elementHieght < window.innerHeight) {
+					startElementPoint = window.innerHeight - window.innerHeight / elementStart;
+				}
+				if ((scrollY > elementOffset - startElementPoint) && scrollY < (elementOffset + elementHieght)) {
+					scrollElement.add('_active');
+				} else {
+					scrollElement.remove('_active');
+				}
+			}
+		};
+	}
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollLeft = window.scrollX || document.documentElement.scrollLeft,
+			scrollTop = window.scrollY || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
+	}
+}
+// -------------------------------(Show Menu)-----------------------------------
+function _showEMenu() {
+	let prevScrollpos = window.scrollY;
+	window.onscroll = function () {
+		const scrollmenu = document.querySelector('.header');
+		let currentScrollPos = window.scrollY;
+		if (prevScrollpos > currentScrollPos) {
+			scrollmenu.style.top = "16px";
+		} else {
+			scrollmenu.style.top = "-250px";
+		}
+		prevScrollpos = currentScrollPos;
+	};
+}
+// -----------------------------(Show Element)----------------------------------
+function _showElement() {
+	document.addEventListener('DOMContentLoaded', function () {
+		let showElement = document.querySelectorAll('.show-element');
+		function checkBlocksVisibility() {
+			let windowHeight = window.innerHeight;
+			let elementVisible = 100;
+			showElement.forEach((item) => {
+				let blockPosition = item.getBoundingClientRect().top;
+				if (blockPosition < windowHeight - elementVisible) {
+					item.style.opacity = "1";
+					item.style.transform = "translateY(0)";
+				}
+				else if (blockPosition > windowHeight - elementVisible) {
+					item.style.opacity = "0";
+					item.style.transform = "translateY(200px)";
+				}
+			});
+		}
+
+		checkBlocksVisibility();
+		window.addEventListener('scroll', function () {
+			checkBlocksVisibility();
+		});
+	});
+}
 // ----------------------------(Collapse Media)---------------------------------
 function _collapseMenuFooter() {
 	if (isMobile.any()) {
@@ -97,4 +172,4 @@ function _loop(els, elClosest, md) {
 }
 
 // -----------------------------------------------------------------------------
-export { _responsive, _collapseMedia, _collapseMenuFooter, _sideBarMenu };
+export { _responsive, _collapseMedia, _collapseMenuFooter, _sideBarMenu, _showElement, _showEMenu };

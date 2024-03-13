@@ -9,7 +9,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		z-index: 12;
+		z-index: 10;
 		transition: transform 0.4s ease 0s;
 		transform: translateX(-110%);
 		background: linear-gradient(135deg, rgb(28, 39, 74), rgb(4, 7, 17));
@@ -28,7 +28,7 @@
 			height: 88px;
 			width: 100%;
 
-			background: linear-gradient(26deg, rgb(28, 39, 74), rgba(4, 7, 17));
+			background: linear-gradient(10deg, rgb(28, 39, 74), rgb(4, 7, 17));
 		}
 		padding-top: 88px;
 		&__body {

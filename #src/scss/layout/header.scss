@@ -1,17 +1,22 @@
-.info-page__box {
-	font-size: 20px;
-}
 .header {
-	max-width: 1232px;
-	position: sticky;
-	z-index: 10;
+	position: fixed;
+	width: 100%;
+	z-index: 11;
 	top: 16px;
-	margin: 0 auto;
+	transition: top 0.5s ease 0.3s;
+
+	&__wrapper {
+		max-width: 1264px;
+		margin: 0 auto;
+		opacity: 0;
+		transform: translateY(-300px);
+		transition: all 0.7s ease 0.5s;
+	}
 	&__body {
 		border-radius: 32px;
-		// background: rgba(252, 252, 252, 0.151);
-		margin: 0 16px;
-		// padding: 16px 0;
-		// box-shadow: 1px 1px 5px #000;
+		margin: 0 32px;
+		@include _490 {
+			margin: 0 16px;
+		}
 	}
 }
