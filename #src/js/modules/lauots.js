@@ -64,7 +64,7 @@ function _showElement() {
 		let showElement = document.querySelectorAll('.show-element');
 		function checkBlocksVisibility() {
 			let windowHeight = window.innerHeight;
-			let elementVisible = 100;
+			let elementVisible = 0;
 			showElement.forEach((item) => {
 				let blockPosition = item.getBoundingClientRect().top;
 				if (blockPosition < windowHeight - elementVisible) {
@@ -73,7 +73,7 @@ function _showElement() {
 				}
 				else if (blockPosition > windowHeight - elementVisible) {
 					item.style.opacity = "0";
-					item.style.transform = "translateY(200px)";
+					item.style.transform = "translateY(100px)";
 				}
 			});
 		}

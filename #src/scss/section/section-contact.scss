@@ -8,7 +8,8 @@
 		gap: 16px;
 		@include flex-align-center-justify-space-between;
 		@include _768 {
-			padding: 88px 16px 120px;
+			gap: 48px;
+			padding: 88px 16px 144px;
 			flex-direction: column;
 		}
 	}

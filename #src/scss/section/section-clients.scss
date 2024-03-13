@@ -1,10 +1,9 @@
 .clients {
 	// .clients__body
 	&__body {
-		@extend .service-nordcore__body;
 		padding: 184px 0 120px;
 		@include _690 {
-			padding: 120px 16px 88px 16px;
+			padding: 144px 16px 88px 16px;
 		}
 	}
 

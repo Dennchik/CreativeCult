@@ -23,7 +23,7 @@
 		border-radius: 0 0 64px 64px;
 		@include _690 {
 			border-radius: 0px 0px 40px 40px;
-			padding: 240px 16px 88px;
+			padding: 110px 16px 88px;
 		}
 	}
 
@@ -55,9 +55,9 @@
 
 		position: relative;
 		z-index: 7;
-		border-radius: 64px;
+		border-radius: 0 0 64px 64px;
 		background: rgb(237, 237, 237);
-		margin-top: 0 0 64px -64px;
+		margin-top: -64px;
 		@include _690 {
 			border-radius: 0px 0px 40px 40px;
 		}

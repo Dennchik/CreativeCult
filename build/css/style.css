@@ -1500,9 +1500,9 @@ button.swiper-pagination-bullet {
   opacity: 0;
   position: relative;
   z-index: 7;
-  border-radius: 64px;
+  border-radius: 0 0 64px 64px;
   background: rgb(237, 237, 237);
-  margin-top: 0 0 64px -64px;
+  margin-top: -64px;
 }
 
 .page__cases {
@@ -2596,7 +2596,6 @@ button.swiper-pagination-bullet {
 }
 
 .service-nordcore__body,
-.clients__body,
 .review__body,
 .cases__body,
 .service-swift__body {
@@ -4643,7 +4642,7 @@ button.swiper-pagination-bullet {
   }
 
   .direction__body {
-    padding: 120px 16px;
+    padding: 144px 16px 152px;
   }
 
   .direct-slide {
@@ -4985,7 +4984,8 @@ button.swiper-pagination-bullet {
   }
 
   .communication__body {
-    padding: 88px 16px 120px;
+    gap: 48px;
+    padding: 88px 16px 144px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -5006,7 +5006,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 690px) {
   .page__info {
     border-radius: 0px 0px 40px 40px;
-    padding: 240px 16px 88px;
+    padding: 110px 16px 88px;
   }
 
   .page__services-nordcore {
@@ -5141,11 +5141,10 @@ button.swiper-pagination-bullet {
   }
 
   .service-nordcore__body,
-  .clients__body,
   .review__body,
   .cases__body,
   .service-swift__body {
-    padding: 120px 0 88px 16px;
+    padding: 144px 0 88px 16px;
   }
 
   .service-nordcore__title,
@@ -5225,7 +5224,7 @@ button.swiper-pagination-bullet {
   }
 
   .media__body {
-    padding: 120px 0 184px 16px;
+    padding: 144px 0 144px 16px;
   }
 
   .media__title {
@@ -5286,7 +5285,7 @@ button.swiper-pagination-bullet {
   }
 
   .clients__body {
-    padding: 120px 16px 88px 16px;
+    padding: 144px 16px 88px 16px;
   }
 
   .clients__item-card {
