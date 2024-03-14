@@ -26,7 +26,7 @@
 	&__image {
 		pointer-events: none;
 		position: relative;
-		top: 140px;
+		top: 90px;
 		right: 0;
 		width: 100%;
 		height: 100%;
@@ -73,7 +73,8 @@
 		}
 	}
 
-	&__ellipse9 {
+	// .info-page__ellipse-9
+	&__ellipse-9 {
 		position: absolute;
 		width: 344.97px;
 		height: 502.84px;
@@ -484,6 +485,18 @@
 			}
 		}
 	}
+
+	// .footer-content__ellipse-9
+	&__ellipse-9 {
+		width: 447.15px;
+		height: 376.28px;
+		position: absolute;
+		bottom: 160px;
+		left: -285px;
+		background: url('../img/bg-image/ellipse-9.png') center / cover no-repeat;
+		filter: blur(100px);
+	}
+
 	// .footer-content__vector-9
 	&__vector-9 {
 		width: 560.92px;
@@ -647,8 +660,7 @@
 		}
 	}
 
-	// .footer-content__text
-
+	// .footer-content__text 
 	&__text {
 		width: 100%;
 		max-width: 560px;
@@ -687,6 +699,7 @@
 	&__wrapper {
 		display: flex;
 	}
+	
 	// .footer-info__column
 	&__column {
 		position: relative;

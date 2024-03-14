@@ -24,9 +24,11 @@
 		left: -100px;
 		width: 500.66px;
 		height: 700.49px;
-		background: url('../img/bg-image/ellipse-10.png') center / cover no-repeat;
+		overflow: visible;
+		background: url('../img/bg-image/ellipse-10.png') center / contain no-repeat;
 		filter: blur(36px);
 	}
+
 	// .media__body
 	&__body {
 		position: relative;
