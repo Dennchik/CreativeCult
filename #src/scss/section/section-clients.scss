@@ -27,7 +27,7 @@
 
 	// .clients__cards
 	&__cards {
-		@include flex-align-center;
+		display: flex;
 		gap: 8px;
 		margin-bottom: 24px;
 		@include _960 {
@@ -37,6 +37,8 @@
 
 	// .clients__item-card
 	&__item-card {
+		display: flex;
+		flex-direction: column;
 		max-width: 596px;
 		cursor: pointer;
 		position: relative;
@@ -101,6 +103,9 @@
 
 	// .clients__content
 	&__content {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
 		position: relative;
 		z-index: 9;
 		padding: 40px;
@@ -114,6 +119,8 @@
 
 	// .clients__text
 	&__text {
+		height: 100%;
+		flex: 1 1 100%;
 		color: rgb(16, 16, 16);
 		font-size: 18px;
 		font-weight: 400;
