@@ -3381,6 +3381,7 @@ button.swiper-pagination-bullet {
 }
 
 .clients__item-card {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3390,7 +3391,6 @@ button.swiper-pagination-bullet {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 596px;
   cursor: pointer;
   position: relative;
   padding-top: 266px;
@@ -3579,6 +3579,7 @@ button.swiper-pagination-bullet {
   border-radius: 0px 0px 32px 32px;
   background: rgb(252, 252, 252);
   border-radius: 32px;
+  min-width: 256px;
 }
 
 .card-item__image {
@@ -4447,6 +4448,10 @@ button.swiper-pagination-bullet {
     -ms-transform: translateX(235px);
     -o-transform: translateX(235px);
     transform: translateX(235px);
+  }
+
+  .clients__item-card {
+    max-width: 596px;
   }
 
   .top-row__column:nth-child(5) {

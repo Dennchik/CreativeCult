@@ -7,6 +7,6 @@ directSlide();
 import holdingSlide from './modules/holding-slide.js';
 holdingSlide();
 
-import { _responsive, _collapseMedia, _collapseMenuFooter, _sideBarMenu, _showElement, _showEMenu } from "./modules/lauots.js";
-_responsive(); _collapseMedia(); _collapseMenuFooter(); _sideBarMenu(); _showElement(); _showEMenu();
+import { _responsive, _collapseMedia, _collapseMenuFooter, _sideBarMenu, _showEMenu, _showElement } from "./modules/lauots.js";
+_responsive(); _collapseMedia(); _collapseMenuFooter(); _sideBarMenu(); _showEMenu(); _showElement();
 // -----------------------------------------------------------------------------

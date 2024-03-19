@@ -74,7 +74,6 @@
 		"imagemin-pngquant": "^9.0.2",
 		"js-loader": "^0.1.1",
 		"prettier": "^3.2.5",
-		"rellax": "^1.12.1",
 		"require-dir": "^1.2.0",
 		"sass": "^1.54.5",
 		"sass-loader": "^14.1.0",
@@ -88,6 +87,7 @@
 		"D": "^1.0.0",
 		"del": "^6.1.1",
 		"gulp-cli": "^2.3.0",
-		"postcss": "^8.4.35"
+		"postcss": "^8.4.35",
+		"rellax": "^1.12.1"
 	}
 }

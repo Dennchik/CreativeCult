@@ -8,7 +8,8 @@ export default {
 	isDev: isDev,
 
 	webpack: {
-		mode: isProd ? 'production' : 'development',
+		// mode: isProd ? 'production' : 'development',
+		mode: 'production',
 		entry: {
 			main: './#src/js/main.js'
 		},
@@ -19,7 +20,7 @@ export default {
 			rules: [
 				{
 					test: /\.css$/,
-					use: ['style-loader', 'css-loader', 'js-loader'],
+					use: ['style-loader', 'css-loader'],
 				},
 			],
 		},
@@ -119,6 +120,26 @@ export default {
 			quality: 75,
 			progressive: true
 		}),
-	])
+	]),
+	// imagemin: ({
+	// 	verbose: true,
+	// 	interlaced: true,
+	// 	progressive: true,
+	// 	optimizationLevel: 5,
+	// }
+	// [
+	// 	recompress({
+	// 		loops: 6,
+	// 		min: 50,
+	// 		max: 90,
+	// 		quality: 'high',
+	// 		use: [pngquant({
+	// 			quality: [0.8, 1],
+	// 			strip: true,
+	// 			speed: 1
+	// 		})],
+	// 	})
+	// ]
+	// )
 }
 
