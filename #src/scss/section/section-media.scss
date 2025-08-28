@@ -90,6 +90,7 @@
 
 	// .media__cards
 	&__cards {
+		border: 2px solid red;
 		@extend .service-nordcore__cards;
 		display: flex;
 		gap: 9px;
